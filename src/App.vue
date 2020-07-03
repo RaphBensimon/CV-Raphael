@@ -8,7 +8,9 @@
 			<img src="@/assets/img/bar.svg">
 		</div>
 		<router-view/>
-		<footer></footer>
+		<footer>
+			<p>Essayez de <b>redimensionner</b> la fênetre !</p>
+		</footer>
 	</div>
 </template>
 <script type="text/javascript"></script>
@@ -56,10 +58,14 @@ header h2 {
 	width: 100%;
 }
 footer {
-	height: 12px;
+	color: @white;
+	display: flex;
+	justify-content: center;
 	background-color: @red;
 }
-
+footer p {
+	margin: 5px 0;
+}
 @media screen and (max-width: 650px) {
 	header {
 		margin: 15px 0;

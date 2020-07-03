@@ -4,9 +4,10 @@
 			<img id="profile_picture" src="@/assets/img/raphael.jpg">
 			<div class="content">
 				<h3>Contact</h3>
-				<p>06 ** ** ** **</p>
-				<p>rbensimon05@gmail.com</p>
-				<p>Villemomble, 93250</p>
+				<p class="iconed"><img src="@/assets/img/call.svg">06 ** ** ** **</p>
+				<p class="iconed"><img src="@/assets/img/mail.svg">rbensimon05@gmail.com</p>
+				<p class="iconed"><img src="@/assets/img/location.svg">Villemomble, 93250</p>
+				<p class="iconed"><img src="@/assets/img/logo-github.svg"><a target="_blank" href="https://github.com/RaphBensimon">https://github.com/RaphBensimon</a></p>
 			</div>
 			<div class="content">
 				<h3>Diplômes</h3>
@@ -72,7 +73,7 @@ export default {
 	color: @blue;
 }
 #home #left_content {
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	background-color: @grey;
 	padding: 0 40px;
@@ -86,7 +87,7 @@ export default {
 	margin-top: 30px;
 }
 #home #right_content {
-	width: 70%;
+	width: 60%;
 	padding: 0 40px;
 	padding-bottom: 50px;
 	display: flex;
@@ -99,7 +100,7 @@ export default {
 	font-size: 14px;
 }
 #home #right_content #competences {
-	margin-top: 17px;
+	margin-top: 20px;
 }
 #home #right_content #competences ul {
 	padding: 0;
@@ -129,6 +130,15 @@ export default {
 .content p {
 	margin: 10px 0;
 }
+.content p.iconed {
+	display: flex;
+	align-items: center;
+	img {
+		width: 16px;
+		height: 16px;
+		margin-right: 5px;
+	}
+}
 .content .exp h4 {
 	margin-top: 10px;
 	margin-bottom: 0;
@@ -155,6 +165,7 @@ export default {
 	}
 	#home #left_content #profile_picture {
 		margin-top: 0;
+		align-self: unset;
 		width: 120px;
 	}
 	#home #left_content .content {
@@ -177,7 +188,7 @@ export default {
 		margin-top: 30px;
 	}
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
 	#home #left_content {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -187,6 +198,9 @@ export default {
 		text-align: right;
 		&:first-of-type {
 			margin-bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
 		}
 		&:nth-of-type(2){
 			text-align: left;
@@ -196,12 +210,16 @@ export default {
 		margin-bottom: 20px;
 	}
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 450px){
 	#home #left_content {
 		flex-direction: column;
 	}
 	#home #left_content .content {
+		margin-bottom: 20px;
 		text-align: left;
+		&:first-of-type {
+			align-items: flex-start;
+		}
 	}
 }
 </style>

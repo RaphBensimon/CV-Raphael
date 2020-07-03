@@ -48,10 +48,11 @@ header h2 {
 }
 #bar_container {
 	width: 100%;
+	height: 37px;
 }
 #bar_container img {
 	object-fit: cover;
-	height: 37px;
+	height: 100%;
 	width: 100%;
 }
 footer {

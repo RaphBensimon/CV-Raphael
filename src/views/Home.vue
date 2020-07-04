@@ -1,12 +1,12 @@
 <template>
  	<main id="home">
 		<div id="left_content">
-			<img id="profile_picture" src="@/assets/img/raphael.jpg">
+			<img id="profile_picture" alt="Raphaël BENSIMON" src="@/assets/img/raphael.jpg">
 			<div class="content">
 				<h3>Contact</h3>
-				<p class="iconed"><img src="@/assets/img/call.svg">06 ** ** ** **</p>
-				<p class="iconed"><img src="@/assets/img/mail.svg">rbensimon05@gmail.com</p>
-				<p class="iconed"><img src="@/assets/img/location.svg">Villemomble, 93250</p>
+				<p class="iconed"><img src="@/assets/img/call.svg"><a class="no_decoration" href="tel:+33658759117">06 58 75 91 17</a></p>
+				<p class="iconed"><img src="@/assets/img/mail.svg"><a class="no_decoration" href="mailto:rbensimon05@gmail.com">rbensimon05@gmail.com</a></p>
+				<p class="iconed"><img src="@/assets/img/location.svg"><a class="no_decoration" target="_blank" href="https://goo.gl/maps/QZzqDkK6vZ6GmYxw5">Villemomble, 93250</a></p>
 				<p class="iconed"><img src="@/assets/img/logo-github.svg"><a target="_blank" href="https://github.com/RaphBensimon">https://github.com/RaphBensimon</a></p>
 			</div>
 			<div class="content">
@@ -158,7 +158,7 @@ export default {
 	#home #left_content {
 		width: 100%;
 		flex-direction: row;
-		padding: 15px 40px;
+		padding: 15px 20px;
 		flex-wrap: wrap;
 		height: auto;
 		justify-content: space-between;
@@ -183,6 +183,7 @@ export default {
 	}
 	#home #right_content {
 		width: 100%;
+		padding: 0 20px;
 	}
 	#home #right_content #description {
 		margin-top: 30px;
@@ -212,10 +213,18 @@ export default {
 }
 @media screen and (max-width: 450px){
 	#home #left_content {
-		flex-direction: column;
+		flex-direction: row;
 	}
 	#home #left_content .content {
 		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 374px){
+		#home #left_content {
+		flex-direction: column;
+	}
+	#home #left_content .content {
 		text-align: left;
 		&:first-of-type {
 			align-items: flex-start;

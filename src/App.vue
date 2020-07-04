@@ -9,7 +9,7 @@
 		</div>
 		<router-view/>
 		<footer>
-			<p>Essayez de <b>redimensionner</b> la fênetre !</p>
+			<p>Développé sous <b>VueJS</b></p>
 		</footer>
 	</div>
 </template>

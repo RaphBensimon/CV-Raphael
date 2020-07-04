@@ -104,6 +104,7 @@ export default {
 }
 #home #right_content #competences ul {
 	padding: 0;
+	margin: 10px 0 0 0;
 }
 #home #right_content #competences ul li {
 	list-style: none;
@@ -183,7 +184,7 @@ export default {
 	}
 	#home #right_content {
 		width: 100%;
-		padding: 0 20px;
+		padding: 0 20px 30px 20px;
 	}
 	#home #right_content #description {
 		margin-top: 30px;

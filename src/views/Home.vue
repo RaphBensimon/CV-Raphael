@@ -13,8 +13,8 @@
 				<h3>Formations</h3>
 				<p><b>BAC STL</b><br><i>Lycée Gregor Mendel</i></p>
 				<p><b>Classe prépratoire web</b><br><i>ORT Montreuil 2016</i></p>
-				<p><b>Bachelor CSI</b> (Sans TOEIC)<br><i>ORT Montreuil 2017</i></p>
-				<p><b>Master MS2I</b> (Non Obtenu)<br><i>ORT Montreuil 2020</i></p>
+				<p><b>Bachelor CSI</b><br><i>ORT Montreuil 2017</i></p>
+				<p><b>Master MS2I</b><br><i>ORT Montreuil 2020</i></p>
 			</div>
 			<div class="content">
 				<h3>Passion</h3>
